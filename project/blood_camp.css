@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #b30000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #800000;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #b30000;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #b30000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #800000;
+}
+
+.featured-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.featured-section h2 {
+    color: #b30000;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.featured-section p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #b30000;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #800000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #b30000;
+}
+
+.camp-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.camp-list h2 {
+    color: #b30000;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.camp-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.camp-list ul li {
+    margin-bottom: 20px;
+}
+
+.camp-list ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.camp-list ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.camp-description {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.camp-description h1 {
+    color: #b30000;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.camp-description p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.camp-description h2 {
+    color: #b30000;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.camp-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #666;
+}
+
+.camp-description ul li {
+    margin-bottom: 20px; /* Added space between list items */
+}
+
+.camp-description button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #b30000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.camp-description button:hover {
+    background-color: #800000;
+}
+
+footer {
+    background-color: #b30000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .search-bar input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .camp-list, .camp-description {
+        padding: 10px;
+    }
+}

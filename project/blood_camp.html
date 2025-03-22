@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Camps</title>
+    <link rel="stylesheet" href="blood_camp.css">
+</head>
+
+<body>
+    <div class="search-bar">
+        <input type="text" id="searchBar" placeholder="Search camps by location...">
+        <button onclick="searchCamps()">Search</button>
+    </div>
+
+    <div class="camp-list" id="campList">
+        <h2>Available Camps</h2>
+        <ul>
+            <li>
+
+                <ul>
+                    <li>1. Moze college blood donation camp:
+                        <ul>
+                            <li>Date: 28/01/25</li>
+                            <li>Duration: 10:00am to 5:00pm</li>
+                            <li>Location: E- building, Parvatibai Genba Moze college of engineering, Wagholi, Pune.</li>
+                        </ul>
+                    </li>
+                    <li>2. BJS college blood donation camp:
+                        <ul>
+                            <li>Date: 27/01/2025</li>
+                            <li>Duration: 10:00 am to 5:00pm</li>
+                            <li>Location: A-building, BJS college of arts, commerce, and science, Wagholi, Pune</li>
+                        </ul>
+                    </li>
+                    <li>3. Morden college blood donation camp:
+                        <ul>
+                            <li>Date: 30/01/2025</li>
+                            <li>Duration: 10:00am to 5:00pm</li>
+                            <li>Location: B-building, Morden college of arts, commerce, and science, Pune</li>
+                        </ul>
+                    </li>
+                    <li>4. G.H.Raisoni blood donation camp:
+                        <ul>
+                            <li>Date: 29/01/2025</li>
+                            <li>Duration: 10:00am to 5:00pm</li>
+                            <li>Location: B-building, G.H. Raisoni college of engineering, Wagholi, Pune</li>
+                        </ul>
+                    </li>
+                    <li>5. K.V.M college blood donation camp:
+                        <ul>
+                            <li>Date: 31/01/2025</li>
+                            <li>Duration: 10:00am to 5:00pm</li>
+                            <li>Location: Science department building, K.V.M college of arts, commerce and science,
+                                Rahu, Pune</li>
+                        </ul>
+                    </li>
+                    <li>6. VIT Pune blood donation camp:
+                        <ul>
+                            <li>Date: 10/02/25</li>
+                            <li>Duration: 8:00am to 12:00pm</li>
+                            <li>Location: Vishwakarma Institute of Technology, Bibwewadi, Pune.</li>
+                        </ul>
+                    </li>
+                    <li>7. MIT WPU blood donation camp:
+                        <ul>
+                            <li>Date: 15/02/25</li>
+                            <li>Duration: 6:00am to 10:00am</li>
+                            <li>Location: MIT World Peace University, Kothrud, Pune.</li>
+                        </ul>
+                    </li>
+                    <li>8. Sinhgad College blood donation camp:
+                        <ul>
+                            <li>Date: 20/02/25 to 22/02/25</li>
+                            <li>Duration: 9:00am to 9:00pm</li>
+                            <li>Location: Sinhgad College Campus, Vadgaon, Pune.</li>
+                        </ul>
+                    </li>
+                    <li>9. COEP blood donation camp:
+                        <ul>
+                            <li>Date: 25/02/25</li>
+                            <li>Duration: 9:30am to 4:00pm</li>
+                            <li>Location: College of Engineering Pune, Shivajinagar, Pune.</li>
+                        </ul>
+                    </li>
+                    <li>10. PCCOE blood donation camp:
+                        <ul>
+                            <li>Date: 01/03/25</li>
+                            <li>Duration: 11:00am to 5:00pm</li>
+                            <li>Location: Pimpri Chinchwad College of Engineering, Akurdi, Pune.</li>
+                        </ul>
+                    </li>
+                    <li>11. Bharati Vidyapeeth Cultural Festival:
+                        <ul>
+                            <li>Date: 25/02/25 to 28/02/25</li>
+                            <li>Duration: 10:00am to 10:00pm</li>
+                            <li>Location: Bharati Vidyapeeth Deemed University Campus, Kondhwa, Pune.</li>
+                        </ul>
+                    </li>
+                    <li>12. Trinity College Start-Up Pitch Event:
+                        <ul>
+                            <li>Date: 02/03/25</li>
+                            <li>Duration: 11:00am to 3:00pm</li>
+                            <li>Location: Trinity College of Engineering and Research, Kondhwa, Pune.</li>
+                        </ul>
+                    </li>
+                    <li>5. Blood Donation Camp at Deccan Gymkhana:
+                        <ul>
+                            <li>Date: 15/02/2025</li>
+                            <li>Duration: 9:00am to 4:00pm</li>
+                            <li>Location: Deccan Gymkhana Hall, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>6. Blood Donation Camp at Pimpri-Chinchwad:
+                        <ul>
+                            <li>Date: 20/02/2025</li>
+                            <li>Duration: 10:00am to 5:00pm</li>
+                            <li>Location: Pimpri-Chinchwad Community Center, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>7. Blood Donation Camp at Koregaon Park:
+                        <ul>
+                            <li>Date: 25/02/2025</li>
+                            <li>Duration: 8:00am to 2:00pm</li>
+                            <li>Location: Rotary Club Hall, Koregaon Park, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>8. Blood Donation Camp at Hadapsar:
+                        <ul>
+                            <li>Date: 02/03/2025</li>
+                            <li>Duration: 9:30am to 4:30pm</li>
+                            <li>Location: Magarpatta City Amphitheater, Hadapsar, Pune</li>
+                        </ul>
+                    </li>
+                    <li>9. Blood Donation Camp at Amanora Mall:
+                        <ul>
+                            <li>Date: 05/03/2025</li>
+                            <li>Duration: 10:00am to 6:00pm</li>
+                            <li>Location: Amanora Mall, Hadapsar, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>10. Blood Donation Camp at Seasons Mall:
+                        <ul>
+                            <li>Date: 10/03/2025</li>
+                            <li>Duration: 11:00am to 5:00pm</li>
+                            <li>Location: Seasons Mall, Hadapsar, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>11. Blood Donation Camp at Magarpatta City:
+                        <ul>
+                            <li>Date: 15/03/2025</li>
+                            <li>Duration: 9:00am to 3:00pm</li>
+                            <li>Location: Magarpatta Community Hall, Hadapsar, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>12. Blood Donation Camp at Sadhana High School:
+                        <ul>
+                            <li>Date: 20/03/2025</li>
+                            <li>Duration: 10:00am to 4:00pm</li>
+                            <li>Location: Sadhana High School Auditorium, Hadapsar, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>13. Blood Donation Camp at Noble Hospital:
+                        <ul>
+                            <li>Date: 25/03/2025</li>
+                            <li>Duration: 8:30am to 2:30pm</li>
+                            <li>Location: Noble Hospital Lobby, Hadapsar, Pune</li>
+                        </ul>
+                    </li>  
+                    <li>14. Blood Donation Camp at Pune University:
+                        <ul>
+                            <li>Date: 05/03/2025</li>
+                            <li>Duration: 9:00am to 4:00pm</li>
+                            <li>Location: Main Hall, Savitribai Phule Pune University, Shivajinagar, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>15. Blood Donation Camp at J.M. Road:
+                        <ul>
+                            <li>Date: 10/03/2025</li>
+                            <li>Duration: 10:00am to 5:00pm</li>
+                            <li>Location: Bal Gandharva Rang Mandir, J.M. Road, Shivajinagar, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>16. Blood Donation Camp at Shivajinagar Railway Station:
+                        <ul>
+                            <li>Date: 15/03/2025</li>
+                            <li>Duration: 8:00am to 3:00pm</li>
+                            <li>Location: Waiting Hall, Shivajinagar Railway Station, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>17. Blood Donation Camp at Fergusson College:
+                        <ul>
+                            <li>Date: 20/03/2025</li>
+                            <li>Duration: 9:30am to 4:30pm</li>
+                            <li>Location: Auditorium, Fergusson College, Shivajinagar, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>18. Blood Donation Camp at Modern College:
+                        <ul>
+                            <li>Date: 25/03/2025</li>
+                            <li>Duration: 10:00am to 3:00pm</li>
+                            <li>Location: Seminar Hall, Modern College of Arts, Science & Commerce, Shivajinagar, Pune</li>
+                        </ul>
+                    </li>
+                    <li>19. Blood Donation Camp at Dorabjee's Mall:
+                        <ul>
+                            <li>Date: 05/03/2025</li>
+                            <li>Duration: 10:00am to 6:00pm</li>
+                            <li>Location: Community Hall, Dorabjee's Mall, Kondhwa, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>20. Blood Donation Camp at NIBM Road:
+                        <ul>
+                            <li>Date: 10/03/2025</li>
+                            <li>Duration: 9:30am to 3:30pm</li>
+                            <li>Location: Cloud 9 Gym Hall, NIBM Road, Kondhwa, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>21. Blood Donation Camp at Kausar Baug:
+                        <ul>
+                            <li>Date: 15/03/2025</li>
+                            <li>Duration: 10:00am to 4:00pm</li>
+                            <li>Location: Kausar Baug Community Center, Kondhwa, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>22. Blood Donation Camp at Salunke Vihar:
+                        <ul>
+                            <li>Date: 20/03/2025</li>
+                            <li>Duration: 9:00am to 3:00pm</li>
+                            <li>Location: Salunke Vihar Clubhouse, Kondhwa, Pune</li>
+                        </ul>
+                    </li>
+                    
+                    <li>23. Blood Donation Camp at Mohammadwadi:
+                        <ul>
+                            <li>Date: 25/03/2025</li>
+                            <li>Duration: 10:00am to 5:00pm</li>
+                            <li>Location: Destination Center, Mohammadwadi, Kondhwa, Pune</li>
+                        </ul>
+                    </li>
+                    
+                                                          
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <script>
+        function searchCamps() {
+            const input = document.getElementById('searchBar').value.toLowerCase();
+            const campList = document.getElementById('campList');
+            const camps = campList.getElementsByTagName('li');
+            for (let i = 0; i < camps.length; i++) {
+                const camp = camps[i].innerText.toLowerCase();
+                if (camp.includes(input)) {
+                    camps[i].style.display = '';
+                } else {
+                    camps[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
